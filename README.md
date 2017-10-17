@@ -2,4 +2,4 @@
 
 a [Sails](http://sailsjs.org) application
 
-Try it at justeprix.bihanbreizh.fr
+[Try it](http://justeprix.bihanbreizh.fr)
