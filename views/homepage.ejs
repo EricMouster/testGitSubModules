@@ -1,0 +1,53 @@
+<div class="ui fixed inverted menu">
+  <div class="ui container">
+    <a href="http://localhost:1337" class="header item">
+      <img class="logo" src="images/logo.png">
+      Le juste prix
+    </a>
+  </div>
+</div>
+
+<div class="ui main text container">
+  <h1 class="ui header">Le juste prix</h1>
+  <div class="ui warning message" style="display: none;" id="errorBox">
+    <i class="close icon" id="closeBox"></i>
+    <div class="header">
+      Oups, une erreur est survenue...
+    </div>
+    <p><span id="message"></span></p>
+  </div>
+  <div class="ui two column grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui segment">
+          <div class="ui top attached progress green"  data-total="300" id="progress">
+            <div class="bar"></div>
+          </div>
+          <form class="ui form">
+            <div class="field">
+              <label>Donne un prix entre 1 et 100€</label>
+              <div class="ui labeled input">
+                <div class="ui label">
+                  €
+                </div>
+                <input type="number" placeholder="0€" id="prix" min="1" max="100" onfocus="this.select();">
+              </div>
+            </div>
+            <button class="ui blue button" type="submit" id="send">Envoyer</button>
+            <button class="ui red button" type="button" id="restart">Recommencer</button>
+          </form>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment" style="display: none;" id="loader">
+          <p></p>
+          <div class="ui active dimmer">
+            <div class="ui loader"></div>
+          </div>
+        </div>
+        <img src="" alt="resultat" id="image" style="display: none;">
+        <p id="result">Le prix était de <span id="showPrice"></span>€</p>
+      </div>
+    </div>
+  </div>
+</div>
