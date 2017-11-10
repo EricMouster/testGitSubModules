@@ -1,0 +1,3 @@
+[submodule "justeprix"]
+	path = justeprix
+	url = https://github.com/EricMouster/justeprix.git
